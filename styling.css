@@ -1,0 +1,328 @@
+@media (min-width: 600px){
+
+}
+body{
+    border: 2px solid black;
+    margin: 0px auto;
+}
+
+
+header{
+    background-image: url(images/oil.jpg);
+    font-family:"Cambria", Arial, sans-serif;
+    color: orange;
+    font-weight:bold;
+    line-height: 90%;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 10px 10px 10px black;
+    border: 3px solid black;
+    margin-left: 2%;
+
+}
+
+* a{
+    text-decoration: none;
+
+}
+
+section{
+    padding: 5px;
+    margin-left: 5px;
+    display: block;
+    margin-bottom: 122px;
+    margin-left: 50px;
+}
+
+.buttons{
+    margin-top: 5%;
+    padding: 10px;
+    width: auto;
+    margin-left: 100px;
+}
+
+.buttons2{
+    margin-top: -20px;
+    clear: both;
+    margin-left: 100px;
+    width: auto;
+    padding: 10px;
+}
+
+.buttons2 a img{
+    margin-right:60px;
+}
+.buttons a img{
+    margin-right: 60px;
+}
+
+#nav2 {
+    float: right;
+    margin-left: 5px;
+    color: white;
+    background-image: url("images/brick.jpg");
+    width: 24%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: -10px;
+}
+
+#nav2 ul li{
+    list-style: none;
+    font-size: 30px;
+    margin-top:10px;
+    padding: 10px 10px 0px 10px;
+    margin-right: 10px;
+    font-family: "Apple Color Emoji";
+}
+
+#nav2 ul li a{
+   text-decoration: none;
+}
+
+#nav2 ul li h3{
+    font-family: "Chalkboard SE";
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+#aprod{
+    position: relative;
+    left: -200px;
+    bottom: -40px;
+    display: none;
+    text-decoration: none;
+    font-style: oblique;
+
+}
+
+#prod:hover #aprod{
+    display: inline;
+}
+#customer{
+     position: relative;
+     left: -250px;
+     bottom: -40px;
+     display: none;
+     text-decoration: none;
+    font-style: oblique;
+
+ }
+
+#cust:hover #customer{
+    display: inline;
+}
+
+#sorder{
+    position: relative;
+    left:  -250px;
+    bottom: -40px;
+    display: none;
+    text-decoration: none;
+    font-style: oblique;
+
+}
+
+#sord:hover #sorder{
+    display: inline;
+}
+
+#porder{
+    position: relative;
+    left: -200px;
+    bottom: -40px;
+    display: none;
+    text-decoration: none;
+    font-style: oblique;
+
+}
+
+#pur:hover #porder{
+    display: inline;
+}
+
+#asupp{
+    position: relative;
+    left: -200px;
+    bottom: -40px;
+    display: none;
+    text-decoration: none;
+    font-style: oblique;
+
+}
+
+#supp:hover #asupp{
+    display: inline;
+}
+
+#floc{
+    position: relative;
+    left: -200px;
+    bottom: -40px;
+    display: none;
+    text-decoration: none;
+    font-style: oblique;
+
+}
+
+#loc:hover #floc{
+    display: inline;
+}
+
+
+footer{
+    margin-left: 20px;
+    clear: both;
+    text-align: center;
+    height: 50px;
+    background-image: url("images/foot.jpg");
+    color: whitesmoke;
+}
+#form1{
+    margin-left: 50px;
+    margin-right: 10%;
+    font-family: Verdana, sans-serif;
+    font-size: large;
+    font-style: inherit;
+    border-radius: 5px;
+    border:solid black;
+    padding: 15px;
+}
+#form2{
+    margin-left: 50px;
+    margin-right: 10%;
+    font-family: Verdana, sans-serif;
+    font-size: large;
+    font-style: inherit;
+    border-radius: 5px;
+    border:solid black;
+    padding: 15px;
+}
+.formfield{
+    border-radius: 5px;
+    border:solid black;
+}
+
+#subbutt{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+#hash
+{
+    color: red;
+}
+
+#log{
+    align-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid black;
+    margin-top: 70px;
+    margin-left: 30%;
+    margin-right: 38%;
+    color: white;
+    font-family: Verdana, sans-serif;
+    background-image: url("images/login.jpg");
+}
+
+#signup{
+   text-align: right;
+    color: black;
+}
+#log h2{
+    font-family: Symbol;
+    text-shadow: 10px 10px 10px orange;
+    font-size: 300%;
+    color: floralwhite;
+}
+
+#log h4{
+font-family: "Apple Braille";
+}
+
+#log h5{
+    font-size: small;
+    color: red;
+}
+
+#headlogin{
+    margin-left: -5.2%;
+}
+
+#footlogin{
+    margin-left: -8%;
+}
+.formfiel{
+    width: 90%;
+    color: black;
+}
+
+.w3-sidenav{
+    text-align: center;
+}
+
+#form1 table tr td{
+    padding-bottom: 10px;
+}
+
+#form2 table tr td{
+    padding-bottom: 10px;
+}
+
+#form5 th{
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+}
+
+
+.tablefield{
+    width: 100%;
+}
+
+#addp{
+    color: red;
+}
+
+hr{
+    color: black;
+}
+
+#purtotal{
+    width: 400px;
+    text-align: right;
+    margin-left: 60%;
+}
+.locicons{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+    box-shadow: 5px 5px 5px orange;
+}
+
+.locbutt{
+    margin-top: 5%;
+    padding: 10px;
+    width: auto;
+    margin-left: 20%;
+}
+
+.locbutt2{
+    margin-top: -20px;
+    clear: both;
+    margin-left: 20%;
+    width: auto;
+    padding: 10px;
+}
+
+.locbutt3{
+    margin-top: -20px;
+    padding: 10px;
+    width: auto;
+    margin-left: 20%;
+}

@@ -6,19 +6,41 @@
  * Time: 12:30 PM
  */
 
+$pnum = htmlspecialchars($_POST['pnum']) ;
+$pname = htmlspecialchars($_POST['pname']);
+$desc = htmlspecialchars($_POST['desc']);
+$isp = htmlspecialchars($_POST['isp']);
+$isl = htmlspecialchars($_POST['isl']);
+$wp = htmlspecialchars($_POST['wp']);
+$rp = htmlspecialchars($_POST['rp']) ;
+$supplier = htmlspecialchars($_POST['supplier']);
+$loccode = htmlspecialchars($_POST['loccode']);
 
 
-echo $pnum = htmlspecialchars($_POST['pnum']) . '<br>';
-echo $pname = htmlspecialchars($_POST['pname']). '<br>';
-echo $desc = htmlspecialchars($_POST['desc']). '<br>';
-echo $isp = htmlspecialchars($_POST['isp']). '<br>';
-echo $isl = htmlspecialchars($_POST['isl']) . '<br>';
-echo $wp = htmlspecialchars($_POST['wp']) . '<br>';
-echo $rp = htmlspecialchars($_POST['rp']) . '<br>';
-echo $supplier = htmlspecialchars($_POST['supplier']). '<br>';
-echo $loccode = htmlspecialchars($_POST['loccode']). '<br>';
+
+require("include/connection.php");
+
+   $query = mysql_query("INSERT INTO user
+                             (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice
+                             )
+                             VALUES ('', '$productserial', '$productname', '$productdescription', '$locationcode', '$suppliercode', '$initialstocklevel', '$initialstockprice', '$wholesaleprice', '$retailprice')", $connection);
+
+                             if(!$query){
+                                $error = mysql_error();
+                                $duplicate = "Duplicate entry";
+                                if (strpos($error,$duplicate) !== false){
+                                    header ("Location: addproduct.html");
+                                    }
+                            }else{
+                                header ("Location: addproduct.html");
+                            }
 
 
+
+    require("include/footer.php");
+
+
+/*
 
 $servername = "localhost";
 $username = "root";

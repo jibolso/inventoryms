@@ -6,8 +6,8 @@
  * Time: 12:30 PM
  */
 
-echo phpinfo();
-/*
+
+
 echo $pnum = htmlspecialchars($_POST['pnum']) . '<br>';
 echo $pname = htmlspecialchars($_POST['pname']). '<br>';
 echo $desc = htmlspecialchars($_POST['desc']). '<br>';

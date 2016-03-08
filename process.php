@@ -19,7 +19,7 @@ $loccode = htmlspecialchars($_POST['loccode']);
 
 
 
-require("include/connection.php");
+require("connection.php");
 
    $query = mysql_query("INSERT INTO user
                              (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice

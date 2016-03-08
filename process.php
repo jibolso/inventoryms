@@ -24,7 +24,7 @@ require("connection.php");
    $query = mysql_query("INSERT INTO user
                              (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice
                              )
-                             VALUES ('', '$productserial', '$productname', '$productdescription', '$locationcode', '$suppliercode', '$initialstocklevel', '$initialstockprice', '$wholesaleprice', '$retailprice')", $connection);
+                             VALUES ('$productserial', '$productname', '$productdescription', '$locationcode', '$suppliercode', $initialstocklevel, $initialstockprice, $wholesaleprice, $retailprice)", $connection);
 
                              if(!$query){
                                 $error = mysql_error();

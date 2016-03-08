@@ -7,17 +7,17 @@
  *
  */
 
-$pnum = htmlspecialchars($_POST['pnum']) ;
-$pname = htmlspecialchars($_POST['pname']);
-$desc = htmlspecialchars($_POST['desc']);
-$isp = htmlspecialchars($_POST['isp']);
-$isl = htmlspecialchars($_POST['isl']);
-$wp = htmlspecialchars($_POST['wp']);
-$rp = htmlspecialchars($_POST['rp']) ;
-$supplier = htmlspecialchars($_POST['supplier']);
-$loccode = htmlspecialchars($_POST['loccode']);
+echo $pnum = htmlspecialchars($_POST['pnum']) . '<br>';
+echo $pname = htmlspecialchars($_POST['pname']) . '<br>';
+echo $desc = htmlspecialchars($_POST['desc']) . '<br>';
+echo $isp = htmlspecialchars($_POST['isp']) . '<br>';
+echo $isl = htmlspecialchars($_POST['isl']) . '<br>';
+echo $wp = htmlspecialchars($_POST['wp']) . '<br>';
+echo $rp = htmlspecialchars($_POST['rp'])  . '<br>';
+echo $supplier = htmlspecialchars($_POST['supplier']) . '<br>';
+echo $loccode = htmlspecialchars($_POST['loccode']) . '<br>';
 
-
+/*
 
 require("connection.php");
 

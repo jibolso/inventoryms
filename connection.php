@@ -1,5 +1,6 @@
-<?php require("constant.php"); ?>
 <?php
+require("constant.php");
+
 $connection = mysql_connect(DB_SERVER,DB_USER,DB_PASS);
 if (!$connection){
 

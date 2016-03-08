@@ -24,7 +24,7 @@ require("connection.php");
 $query = mysql_query("INSERT INTO addproduct
                              (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice
                              )
-                             VALUES ('$pnum', '$pname', '$desc', '$loccode', '$supplier', {$isl}, {$isp}, {$wp}, {$rp})", $connection);
+                             VALUES ('$pnum', '$pname', '$desc', '$loccode', '$supplier', $isl, $isp, $wp, $rp)", $connection);
 
 if(!$query){
     $error = mysql_error();

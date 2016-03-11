@@ -15,17 +15,12 @@ $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inven
 $pnum = htmlspecialchars($_POST['pnum']);
 $pname = htmlspecialchars($_POST['pname']);
 $desc = htmlspecialchars($_POST['desc']);
-//echo $isp = htmlspecialchars($_POST['isp']) . '<br />';
-//echo $isl = htmlspecialchars($_POST['isl']) . '<br />';
-//echo $wp = htmlspecialchars($_POST['wp']) . '<br />';
-//echo $rp = htmlspecialchars($_POST['rp']) . '<br />';
+$isp = htmlspecialchars($_POST['isp']);
+$isl = htmlspecialchars($_POST['isl']);
+$wp = htmlspecialchars($_POST['wp']);
+$rp = htmlspecialchars($_POST['rp']);
 $supplier = htmlspecialchars($_POST['supplier']);
 $loccode = htmlspecialchars($_POST['loccode']);
-$isp = 100;
-$isl = 200;
-$wp = 300;
-$rp = 400;
-
 
     try {                    
         $sql = "INSERT INTO addproduct (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice)

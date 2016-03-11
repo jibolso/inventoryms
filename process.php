@@ -27,7 +27,7 @@ if(submit){
 
     try {                    
         $sql = "INSERT INTO addproduct (productserial, productname,productdescription,locationcode,suppliercode,initialstocklevel,initialstockprice,wholesaleprice,retailprice)
-                VALUES ('$pnum', '$Address', '$pname','$desc','$loccode', '$supplier', $isl, $isp,$wp, $rp)";
+                VALUES ('$pnum', '$pname','$desc','$loccode', '$supplier', $isl, $isp,$wp, $rp)";
         $sth = $db->query($sql);
     } catch(PDOException $e) {
         echo $e->getMessage();

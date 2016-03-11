@@ -32,15 +32,16 @@
         <h2>Customer Details</h2>
         <p>Insert the details of the new customer to be added to the inventory list</p>
         <p>Be careful to fill out compulsory fields indicated by the "*" key</p>
-        <form>
+        <form method="post" action="customer.php">
             <div id = "form1">
                 <table>
                     <tr>
                         <td label for="custtype"> <a id = "hash">*</a> Customer Type : </td>
                         <td>
-                            <select class = "formfield">
-                                <option value = "">Company</option>
-                                <option value = "">Individual</option>
+                            <select class = "formfield" name = "type">
+                                <option selected disabled>SELECT</option>
+                                <option value = "Company">COMPANY</option>
+                                <option value = "Individual">INDIVIDUAL</option>
                             </select>
                         </td>
                     </tr>
@@ -52,19 +53,19 @@
                     </tr>
                     <tr>
                         <td label for ="custtel"> <a id = "hash">*</a> Tel Number : </td>
-                        <td><input type="number" id = "custte" name= "supptel"  value = "" class = "formfield" rows = 1 required></td>
+                        <td><input type="text" id = "custtel" name= "custtel"  value = "" class = "formfield" rows = 1 required></td>
                         <td label for ="custfax"> Fax: </td>
-                        <td><input type="text" id = "custfa" name= "suppfax"  value = "" class = "formfield" rows = 1 ></td>
+                        <td><input type="text" id = "custfax" name= "custfax"  value = "" class = "formfield" rows = 1 ></td>
                     </tr>
                     <tr>
                         <td label for ="custurl"> Website URL : </td>
-                        <td><input type="url" id = "custurl" name= "custur"  value = "" class = "formfield" rows = 1 ></td>
+                        <td><input type="url" id = "custurl" name= "custurl"  value = "" class = "formfield" rows = 1 ></td>
                         <td label for ="custemail"> <a id = "hash">*</a> Customer Email Address : </td>
                         <td><input type="email" id = "custemail" name= "custemail"  value = "" class = "formfield" rows = 1 required></td>
                     </tr>
                     <tr>
                         <td label for ="desc"> Description : </td>
-                        <td><input type="text" id = "desc" name= "desc"  value = "" class = "formfield" rows = 5 cols = 30 ></td>
+                        <td><textarea id = "desc" name= "desc"  value = "" class = "formfield" rows = 5 cols = 30 value = ""></textarea></td>
                 </table>
             </div>
             <h2>Customer Address </h2>
@@ -73,8 +74,8 @@
                 <table>
                     <tr>
                         <td label for="custadd1"></td>
-                        <td><input type="text" id="addApi" name="custadd1" value="" class = "formfield" rows = 1  placeholder="Type your Postcode"></td>
-                        <td><input type="submit" id="custadd2" name="custadd2" value="Find address" class = "formfield" rows = 1></td>
+                        <td><input type="text" id="addApi" name="addApi" value="" class = "formfield" rows = 1  placeholder="Type your Postcode"></td>
+                        <td><input type="submit" id="cu" name="cu" value="Find address" class = "formfield" rows = 1></td>
                         <td label for ="custadd2"> <select class = "formfiel"><option>sdfasdf</option></select></td>
                     </tr>
                     <tr>

@@ -26,8 +26,8 @@ echo $loccode = htmlspecialchars($_POST['loccode']) . '<br />';
 if(submit){
 
     try {                    
-        $sql = "INSERT INTO addproduct (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice)
-                VALUES ('$pnum', '$pname','$desc','$loccode', '$supplier', $isl, $isp,$wp, $rp)";
+        $sql = INSERT INTO addproduct (productserial, productname, productdescription, locationcode, suppliercode, initialstocklevel, initialstockprice, wholesaleprice, retailprice)
+                VALUES ('$pnum', '$pname','$desc','$loccode', '$supplier', $isl, $isp,$wp, $rp);
         $sth = $db->query($sql);
     } catch(PDOException $e) {
         echo $e->getMessage();

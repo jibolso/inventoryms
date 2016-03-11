@@ -7,10 +7,10 @@
  *
  */
 
-/*
+
 $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inventoryms;charset=utf8mb4', 'bee886bc8793e7', '362289e3',array(PDO::ATTR_EMULATE_PREPARES => false,
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-*/
+
 
 echo $pnum = htmlspecialchars($_POST['pnum']) . '<br />';
 echo $pname = htmlspecialchars($_POST['pname']) . '<br />';
@@ -22,7 +22,7 @@ echo $rp = htmlspecialchars($_POST['rp']) . '<br />';
 echo $supplier = htmlspecialchars($_POST['supplier']) . '<br />';
 echo $loccode = htmlspecialchars($_POST['loccode']) . '<br />';
 
-/*
+
 if(submit){
 
     try {                    
@@ -37,5 +37,5 @@ if(submit){
 }else{
     header('Location:index.html');
 }
-*/
+
 ?>

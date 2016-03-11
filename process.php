@@ -31,7 +31,7 @@ if(submit){
         echo $e->getMessage();
     }
 
-    header('Location:new_student.php?s=1');
+    header('Location:addproduct.html?done');
 }else{
     header('Location:index.html');
 }

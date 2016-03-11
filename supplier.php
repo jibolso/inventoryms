@@ -35,7 +35,7 @@ $postc = htmlspecialchars($_POST['postc']);
 $country = htmlspecialchars($_POST['country']);
 
     try {
-        $sql = "INSERT INTO addcustomer (suppliername, suppliercode, contactperson, contactpersontel, telnumber, email, description, addressline1, addressline2, town, county, postcode, country)
+        $sql = "INSERT INTO addsupplier (suppliername, suppliercode, contactperson, contactpersontel, telnumber, email, description, addressline1, addressline2, town, county, postcode, country)
                 VALUES ('$suppn', '$suppc','$contp','$contppn', '$supptel', '$suppfax', '$suppurl','$suppemail', '$desc','$add1', '$add2', '$town', '$county', '$postc', '$country')";
         $sth = $db->query($sql);
     } catch(PDOException $e) {

@@ -15,13 +15,16 @@ $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inven
 echo $pnum = htmlspecialchars($_POST['pnum']) . '<br />';
 echo $pname = htmlspecialchars($_POST['pname']) . '<br />';
 echo $desc = htmlspecialchars($_POST['desc']) . '<br />';
-echo $isp = htmlspecialchars($_POST['isp']) . '<br />';
-echo $isl = htmlspecialchars($_POST['isl']) . '<br />';
-echo $wp = htmlspecialchars($_POST['wp']) . '<br />';
-echo $rp = htmlspecialchars($_POST['rp']) . '<br />';
+//echo $isp = htmlspecialchars($_POST['isp']) . '<br />';
+//echo $isl = htmlspecialchars($_POST['isl']) . '<br />';
+//echo $wp = htmlspecialchars($_POST['wp']) . '<br />';
+//echo $rp = htmlspecialchars($_POST['rp']) . '<br />';
 echo $supplier = htmlspecialchars($_POST['supplier']) . '<br />';
 echo $loccode = htmlspecialchars($_POST['loccode']) . '<br />';
-
+$isp = 100;
+$isl = 200;
+$wp = 300
+$rp = 400;
 
 
     try {                    

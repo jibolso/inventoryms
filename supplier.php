@@ -17,7 +17,6 @@
 $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inventoryms;charset=utf8mb4', 'bee886bc8793e7', '362289e3',array(PDO::ATTR_EMULATE_PREPARES => false,
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-
 $suppn = htmlspecialchars($_POST['suppn']);
 $suppc = htmlspecialchars($_POST['suppc']);
 $contp = htmlspecialchars($_POST['contp']);
@@ -35,7 +34,7 @@ $postc = htmlspecialchars($_POST['postc']);
 $country = htmlspecialchars($_POST['country']);
 
     try {
-        $sql = "INSERT INTO addsupplier (suppliername, suppliercode, contactperson, contactpersontel, telnumber, email, description, addressline1, addressline2, town, county, postcode, country)
+        $sql = "INSERT INTO addsupplier (suppliername, suppliercode, contactperson, contactpersontel, telnumber, fax, url, email, description, addressline1, addressline2, town, county, postcode, country)
                 VALUES ('$suppn', '$suppc','$contp','$contppn', '$supptel', '$suppfax', '$suppurl','$suppemail', '$desc','$add1', '$add2', '$town', '$county', '$postc', '$country')";
         $sth = $db->query($sql);
     } catch(PDOException $e) {

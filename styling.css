@@ -326,10 +326,3 @@ hr{
     width: auto;
     margin-left: 20%;
 }
-
-.BorderShadow {
-    border: solid 2px black;
-    box-shadow: 2px 2px;
-    border-radius: 5px;
-    padding: 5px;
-}

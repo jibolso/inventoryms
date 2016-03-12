@@ -32,7 +32,7 @@
         <h2>Supplier Details</h2>
         <p>Insert the details of the new supplier to be added to the inventory list</p>
         <p>Be careful to fill out compulsory fields indicated by the <a id = "hash">*</a> key</p>
-        <form>
+        <form method="post" action="supplier.php">
             <div id = "form1">
                 <table>
                     <tr>
@@ -70,8 +70,8 @@
                 <table>
                     <tr>
                         <td label for="custadd1"></td>
-                        <td><input type="text" id="addApi" name="custadd1" value="" class = "formfield" rows = 1  placeholder="Type your Postcode"></td>
-                        <td><input type="submit" id="custadd2" name="custadd2" value="Find address" class = "formfield" rows = 1></td>
+                        <td><input type="text" id="addApi" name="su" value="" class = "formfield" rows = 1  placeholder="Type your Postcode"></td>
+                        <td><input type="submit" id="custadd2" name="cu" value="Find address" class = "formfield" rows = 1></td>
                         <td label for ="custadd2"> <select class = "formfiel"><option>sdfasdf</option></select></td>
                     </tr>
                     <tr>
@@ -88,7 +88,7 @@
                     </tr>
                     <tr>
                         <td label for="postc"> <a id = "hash">*</a> Postcode : </td>
-                        <td><input type="text" id="postc" name="postc" value="" class = "formfield" rows = 1 cols = 5></td>
+                        <td><input type="text" id="postc" name="postcode" value="" class = "formfield" rows = 1 cols = 5></td>
                         <td label for ="country"> <a id = "hash">*</a> Country : </td>
                         <td><input type="text" id="country" name="country" value="" class = "formfield" rows = 1></td>
                     </tr>

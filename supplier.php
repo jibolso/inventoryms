@@ -30,12 +30,12 @@ $add1 = htmlspecialchars($_POST['add1']);
 $add2 = htmlspecialchars($_POST['add2']);
 $town = htmlspecialchars($_POST['town']);
 $county = htmlspecialchars($_POST['county']);
-$postc = htmlspecialchars($_POST['postc']);
+$postcode = htmlspecialchars($_POST['postcode']);
 $country = htmlspecialchars($_POST['country']);
 
     try {
         $sql = "INSERT INTO addsupplier (suppliername, suppliercode, contactperson, contactpersontel, telnumber, fax, url, email, description, addressline1, addressline2, town, county, postcode, country)
-                VALUES ('$suppn', '$suppc','$contp','$contppn', '$supptel', '$suppfax', '$suppurl','$suppemail', '$desc','$add1', '$add2', '$town', '$county', '$postc', '$country')";
+                VALUES ('$suppn', '$suppc','$contp','$contppn', '$supptel', '$suppfax', '$suppurl','$suppemail', '$desc','$add1', '$add2', '$town', '$county', '$postcode', '$country')";
         $sth = $db->query($sql);
     } catch(PDOException $e) {
         echo $e->getMessage();

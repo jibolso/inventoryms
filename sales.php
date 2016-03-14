@@ -4,8 +4,8 @@ $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inven
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 
-echo $datesales = htmlspecialchars($_POST['datesales']);
-/*$soid = htmlspecialchars($_POST['soid']);
+$datesales = htmlspecialchars($_POST['datesales']);
+$soid = htmlspecialchars($_POST['soid']);
 $selcust = htmlspecialchars($_POST['selcust']);
 $refcust = htmlspecialchars($_POST['refcust']);
 $deladdcust = htmlspecialchars($_POST['deladdcust']);
@@ -38,5 +38,5 @@ VALUES ($datesales, $soid,'$selcust','$refcust', '$deladdcust', '$paytcust', '$m
     $sth = $db->query($sql);
 } catch(PDOException $e) {
     echo $e->getMessage();
-}*/
+}
 ?>

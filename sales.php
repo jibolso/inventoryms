@@ -13,7 +13,7 @@ $paytcust = htmlspecialchars($_POST['paytcust']);
 $messcust = htmlspecialchars($_POST['messcust']);
 $totunitcust = htmlspecialchars($_POST['totunitcust']);
 $subtotalcust = htmlspecialchars($_POST['subtotalcust']);
-$totalcust = htmlspecialchars($_POST['totalcust']);
+$totalcost = htmlspecialchars($_POST['totalcost']);
 
 $itemcustl = htmlspecialchars($_POST['itemcustl']);
 $itemcustn = htmlspecialchars($_POST['itemcustn']);
@@ -21,11 +21,11 @@ $quancust = htmlspecialchars($_POST['quancust']);
 $costcust = htmlspecialchars($_POST['costcust']);
 $taxcust = htmlspecialchars($_POST['taxcust']);
 $discountcust = htmlspecialchars($_POST['discountcust']);
-$totalcust = htmlspecialchars($_POST['totalcust']);
+$minitotal = htmlspecialchars($_POST['minitotal']);
 
 try {
 $sql = "INSERT INTO salesitem (sid, itemlocation, itemname, quantity, itemcost, tax, discount, total)
-VALUES ($soid, '$itemcustl','$itemcustn',$quancust, $costcust, $taxcust, $discountcust,$totalcust)";
+VALUES ($soid, '$itemcustl','$itemcustn',$quancust, $costcust, $taxcust, $discountcust,$minitotal)";
 $sth = $db->query($sql);
 } catch(PDOException $e) {
 echo $e->getMessage();
@@ -34,7 +34,7 @@ echo $e->getMessage();
 
 try {
     $sql = "INSERT INTO salesorder (datesales, sid, customer, refnumber, message, delAddress, paymenttype, totalunits, subtotal, totalcost)
-VALUES ('$datesales', '$soid','$selcust','$refcust', '$deladdcust', '$paytcust', '$messcust',$totunitcust, $subtotalcust, $totalcust)";
+VALUES ($datesales, $soid,'$selcust','$refcust', '$deladdcust', '$paytcust', '$messcust',$totunitcust, $subtotalcust, $totalcost)";
     $sth = $db->query($sql);
 } catch(PDOException $e) {
     echo $e->getMessage();

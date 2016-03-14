@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NEW PURCHASE</title>
+    <title>NEW SALES</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "styling.css"/>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -46,7 +46,9 @@
             <table>
                 <tr>
                     <td label for="date"> <a id = "hash">*</a> Date : </td>
-                    <td><input type="date" id = "date" name= "date"  value = "" class = "formfield"></td>
+                    <td><input type="date" id = "date" name= "datesales"  value = "" class = "formfield"></td>
+                    <td label for="soid"> <a id = "hash">*</a> Sale Order ID : </td>
+                    <td><input type="text" id = "date" name= "soid"  value = "" class = "formfield"></td>
                 </tr>
                 <tr>
                     <td label for="selcust"> <a id = "hash">*</a> Select Customer : </td>
@@ -66,7 +68,7 @@
                     <td><textarea id = "deladdcust" name= "deladdcust"  value = "" class = "formfield" rows = 5 cols = 28></textarea></td>
                     <td label for="paytype"> <a id = "hash">*</a> Payment Type : </td>
                     <td>
-                        <select class = "formfiel" name = "selcust">
+                        <select class = "formfiel" name = "paytcust">
                             <option value = "CASH"> CASH </option>
                             <option value = "CHEQUE"> CHEQUE </option>
                             <option value="CREDIT/DEBIT CARD"> CREDIT/DEBIT CARD </option>>
@@ -82,6 +84,7 @@
                     <th>Quantity</th>
                     <th>Item Cost</th>
                     <th>Tax</th>
+                    <th>Discount</th>
                     <th>Total</th>
                 </tr>
                 <tr><td><input type="text" id = "itemcustl" name= "itemcustl"  value = "" class = "tablefield"></td>
@@ -89,6 +92,7 @@
                     <td><input type="number" id = "quancust" name= "quancust"  value = "" class = "tablefield"></td>
                     <td><input type="number" id = "costcust" name= "costcust"  value = "" class = "tablefield"></td>
                     <td><input type="number" id = "tax" name= "taxcust"  value = "" class = "tablefield"></td>
+                    <td><input type="number" id = "discountcust" name= "discountcust"  value = "" class = "tablefield"></td>
                     <td><input type="number" id = "totalcust" name= "totalcust"  value = "" class = "tablefield"></td>
                 </tr>
 
@@ -100,15 +104,15 @@
             <table id = purtotal>
                 <tr>
                     <td>Total Units : </td>
-                    <td><input type="totunit" id = "totunitcust" name ="totunitcust" value = "" class = "formfield"></td>
+                    <td><input type="number" id = "totunitcust" name ="totunitcust" value = "" class = "formfield"></td>
                 </tr>
                 <tr>
                     <td>Subtotal : </td>
-                    <td><input type="text" id = "subt" name = "subtotalcust" value = "" class = "formfield"></td>
+                    <td><input type="number" id = "subt" name = "subtotalcust" value = "" class = "formfield"></td>
                 </tr>
                 <tr>
                     <td> Total Cost : </td>
-                    <td><input type="text" id = "tot" name = "totalcust" value = "" class = "formfield"></td>
+                    <td><input type="number" id = "tot" name = "totalcust" value = "" class = "formfield"></td>
                 </tr>
             </table>
             <p id = "purtotal"><input type = "submit" value = "SUBMIT"></p>

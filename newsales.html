@@ -42,6 +42,7 @@
         <h2>New Sales Order Details</h2>
         <p>Insert the details of the sale to be made to a registered customer </p>
         <p>Be careful to fill out compulsory fields indicated by the "*" key</p>
+        <form method="post" action="supplier.php">
         <div id = "form1">
             <table>
                 <tr>
@@ -115,8 +116,10 @@
                     <td><input type="number" id = "tot" name = "totalcust" value = "" class = "formfield"></td>
                 </tr>
             </table>
-            <p id = "purtotal"><input type = "submit" value = "SUBMIT"></p>
         </div>
+            <p id = "purtotal"><input type = "reset" value = "CLEAR">
+                &nbsp; &nbsp; <input type = "submit" value = "SAVE"></p>
+        </form>
     </section>
     <footer>
         <p>&copy; Akpabio Ignatius, 2016</p>

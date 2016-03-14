@@ -1,6 +1,7 @@
 <?php
+
 $db = new PDO('mysql:host=us-cdbr-azure-southcentral-e.cloudapp.net;dbname=inventoryms;charset=utf8mb4', 'bee886bc8793e7', '362289e3',array(PDO::ATTR_EMULATE_PREPARES => false,
-PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 
 $datesales = htmlspecialchars($_POST['datesales']);
@@ -29,6 +30,7 @@ $sth = $db->query($sql);
 } catch(PDOException $e) {
 echo $e->getMessage();
 }
+
 
 try {
     $sql = "INSERT INTO salesorder (datesales, sid, customer, refnumber, message, delAddress, paymenttype, totalunits, subtotal, totalcost)
